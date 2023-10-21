@@ -370,7 +370,7 @@ To Matlab ξεκινά
 
 </div><div>
 
-![](images/26.png)
+![height:600](images/26.png)
 
 </div></div>
 
