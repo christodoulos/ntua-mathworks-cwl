@@ -1,0 +1,98 @@
+/* @theme html-css */
+
+@import "default";
+@import "./schema.css";
+@import "./structure.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono&display=swap");
+
+section {
+  font-family: "Ubuntu";
+  padding: 20px;
+  position: relative;
+}
+
+section ul {
+  padding-left: 1em;
+}
+
+section strong {
+  padding-left: 0;
+}
+
+section::before {
+  display: block;
+  content: url("images/impetus1.png");
+  /* width: 200px;
+  height: auto; */
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+section::after {
+  position: absolute;
+  content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
+  right: 10px;
+  bottom: 7px;
+  font-size: small;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: teal;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .left {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-left: 10px;
+  width: 33%;
+  height: 90%;
+}
+
+footer .left .eu {
+  width: 100px;
+  font-size: small;
+  line-height: 90%;
+}
+
+footer .left img {
+  width: 50px;
+}
+
+footer .middle {
+  font-family: "Ubuntu Mono";
+  text-align: center;
+  width: 34%;
+}
+
+footer .right {
+  text-align: right;
+  margin-right: 10px;
+  width: 33%;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+  /* justify-items: center; */
+  /* margin: 20px 0; */
+}
+
+.columns > :nth-child(2) {
+  align-items: center;
+  justify-self: center;
+}

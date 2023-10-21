@@ -1,0 +1,84 @@
+/* @theme theme */
+
+@import "default";
+@import "./schema.css";
+@import "./structure.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono&display=swap");
+
+section {
+  font-family: "Ubuntu";
+  padding: 20px;
+  position: relative;
+}
+
+section ul {
+  padding-left: 1em;
+}
+
+section strong {
+  padding-left: 0;
+}
+
+section::after {
+  position: absolute;
+  content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
+  right: 50%;
+  bottom: 0px;
+  font-size: small;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: teal;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+
+footer .left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  width: 45%;
+}
+
+footer .middle {
+  text-align: center;
+  width: 10%;
+}
+
+footer .right {
+  text-align: right;
+  margin-right: 10px;
+  width: 45%;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+  /* justify-items: center; */
+  /* margin: 20px 0; */
+}
+
+.columns > :nth-child(2) {
+  align-items: center;
+  justify-self: center;
+  /* width: 100%; */
+}
+
+.bigger {
+  font-size: 2em;
+}
+
+code {
+  font-family: "Ubuntu Mono";
+}

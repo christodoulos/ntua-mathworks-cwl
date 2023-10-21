@@ -1,0 +1,143 @@
+/* @theme godel */
+
+/*
+  ============================================
+    Created by Paulo Cunha
+    version: 1.0
+    last update: 24.mar.2023
+  ============================================       
+*/
+
+/* Importing COLOR SCHEMA */
+
+@import "default";
+@import "./schema.css";
+@import "./structure.css";
+
+/* Importing Font */
+/* Font Credit: htts://https://www.cdnfonts.com/ */
+@import url("https://fonts.cdnfonts.com/css/fira-sans-condensed?styles=19730");
+
+/* -------------------- ROOT -------------------------------*/
+
+:root {
+  font-family: "Fira Sans Condensed", sans-serif;
+
+  --bold-color: rgb(71, 107, 184);
+
+  font-weight: initial;
+  --italic-background-color: rgba(214, 25, 66, 0.144);
+  --italic-background-color: rgba(255, 86, 8, 0.185);
+  --italic-background-color: rgba(25, 171, 255, 0.295);
+  --italic-background-color: rgba(96, 204, 247, 0.63);
+
+  --cool-list-color: rgb(135, 157, 179);
+
+  background-color: white;
+}
+
+section.titlepage .title {
+  border-bottom: 1px solid orangered;
+}
+
+section.cite {
+  --strong-color: rgba(255, 5, 5, 0.795);
+}
+
+section.titlepage .author,
+section.titlepage .date,
+section.titlepage .organization {
+  text-align: left;
+}
+
+section strong {
+  color: rgba(5, 51, 255, 0.534);
+  color: rgba(5, 43, 255, 0.979);
+  color: rgb(211, 43, 80);
+
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: 600;
+}
+
+/* -------------------- TRANSITION -------------------------------*/
+
+section.transition em {
+  /* color: rgb(10, 100, 235); */
+  background-color: rgba(255, 5, 5, 0.295);
+}
+
+section.transition strong {
+  color: rgb(255, 5, 5);
+}
+
+section.transition {
+  background-color: rgb(255, 145, 0);
+  background-color: orange;
+}
+
+/* -------------------- TRANSITION2 -------------------------------*/
+
+section.transition2 strong {
+  color: rgb(10, 100, 235);
+  color: rgb(161, 240, 3);
+}
+
+/* -------------------- BIBLIO -------------------------------*/
+
+section.biblio {
+  /* font-family: "Fira Sans", serif;  */
+
+  --text-color: rgb(253, 252, 252);
+  --biblio-background-color: rgb(0, 0, 0);
+  --border-color: darkorange;
+  --bold-color: orange;
+}
+
+section.biblio p {
+  font-family: "Fira Sans", serif;
+}
+
+/* Slide header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  background-color: #333; /* Change this to your desired background color */
+  color: white; /* Change this to your desired text color */
+}
+
+/* Slide title on the left */
+header h1 {
+  margin: 0;
+}
+
+/* Logo on the right */
+header img.logo {
+  max-height: 40px; /* Adjust the height as needed */
+  margin-left: auto;
+}
+
+/* Slide footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  background-color: #333; /* Change this to your desired background color */
+  color: white; /* Change this to your desired text color */
+}
+
+/* Footer sections */
+footer .left,
+footer .middle,
+footer .right {
+  flex: 1;
+  text-align: left; /* Adjust alignment as needed */
+}
+
+/* Current page/total pages indicator on the right */
+footer .right {
+  text-align: right;
+}
